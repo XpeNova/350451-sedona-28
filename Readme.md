@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Oleg Kul](https://up.htmlacademy.ru/htmlcss/28/user/350451).
-* Наставник: `Неизвестно`.
+* Наставник: [Ирина Малиновская](https://htmlacademy.ru/profile/irina-malinovskaya).
 
 ---
 
