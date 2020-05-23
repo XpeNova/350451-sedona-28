@@ -12,15 +12,15 @@
         </a>
         <nav>
           <ul>
-            <li><a href="">Информация</a></li>
-            <li><a href="">Фото и видео</a></li>
-            <li><a href="">Карта штата</a></li>
+            <li><a href="blank.html">Информация</a></li>
+            <li><a href="blank.html">Фото и видео</a></li>
+            <li><a href="blank.html">Карта штата</a></li>
             <li><a href="hotels.html">Гостиницы</a></li>
           </ul>
         </nav>
       </header>
       <main>
-        <h1>Город Седона</h1>
+        <h1 class="visually-hidden">Город Седона</h1>
         <section>
           <img src="img\intro-welcome.svg" width="456.65px" height="350.88" alt="Приветствие">
         </section>
@@ -85,9 +85,25 @@
           <p>Заинтересовались?</p>
           <p>  Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне  </p>
           <button type="button" name="button">Поиск гостиницы в Седоне</button>
-          <!--
-          <form class="" action="index.html" method="post">
-          </form>-->
+          <form action="https://echo.htmlacademy.ru/courses" method="post">
+            <p>
+              <label for="arrival-date">Дата заезда:</label>
+              <input id="arrival-date" type="text" placeholder="24 апреля 2017">
+            </p>
+            <p>
+              <label for="departure-date">Дата выезда:</label>
+              <input id="departure-date" type="text" placeholder="4 июля 2017">
+            </p>
+            <p>
+              <label for="adults-count">Взрослые:</label>
+              <input id="adults-count" type="nubmer" min="1" placeholder="2">
+            </p>
+            <p>
+              <label for="childs-count">Дети:</label>
+              <input id="childs-count" type="number" min="0" placeholder="0">
+            </p>
+            <button type="button">Найти</button>
+          </form>
         </section>
         <div>
           <img src="img\map.jpg" alt="местонахждение Седоны на карте">
@@ -102,9 +118,9 @@
         </div>
         <div>
           <ul>
-            <li><a href="">twitter</a></li>
-            <li><a href="">facebook</a></li>
-            <li><a href="">youtube</a></li>
+            <li><a href="blank.html">twitter</a></li>
+            <li><a href="blank.html">facebook</a></li>
+            <li><a href="blank.html">youtube</a></li>
           </ul>
         </div>
         <div>
