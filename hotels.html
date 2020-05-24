@@ -20,22 +20,64 @@
         </nav>
       </header>
       <main>
-        <h1>Гостиницы</h1>
-        <!--filter form
+        <h1 class="Visually-hidden">Гостиницы</h1>
         <section>
+          <form action="https://echo.htmlacademy.ru" method="get">
+            <fieldset>
+              <legend>Инфраструктура:</legend>
+                <ul>
+                  <li>
+                    <label for="filter-infrastructure-pool">Бассейн</label>
+                    <input id="filter-infrastructure-pool" type="checkbox" name="infrastructure-pool" checked>
+                  </li>
+                  <li>
+                    <label for="filter-infrastructure-parking">Парковка</label>
+                    <input id="filter-infrastructure-parking" type="text" name="infrastructure-parking">
+                  </li>
+                  <li>
+                    <label for="filter-infrastructure-wifi">Wi-fi</label>
+                    <input id="filter-infrastructure-wifi" type="text" name="infrastructure-wifi">
+                  </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Тип жилья:</legend>
+                <ul>
+                  <li>
+                    <label for="filter-housing-hotel">Гостиница</label>
+                    <input id="filter-housing-hotel" type="checkbox" name="housing-hotel" checked>
+                  </li>
+                  <li>
+                    <label for="filter-housing-motel">Мотель</label>
+                    <input id="filter-housing-motel" type="text" name="housing-motel" checked>
+                  </li>
+                  <li>
+                    <label for="filter-housing-apartments">Апартаменты</label>
+                    <input id="filter-housing-apartments" type="text" name="housing-apartments" checked>
+                  </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Стоимость в сутки (р):</legend>
+                <label class="visually-hidden" for="filter-price-min">от 0</label>
+                <input id="filter-price-min" type="text" name="price-min" placeholder="от 0">
+                <label class="visually-hidden" for="filter-price-min">до 3000</label>
+                <input id="filter-price-min" type="text" name="price-min" placeholder="до 3000">
+            </fieldset>
+            <button type="submit">Показать</button>
+          </form>
         </section>
-        -->
         <section>
           <p>Найдено: 3</p>
           <p>Сортировка:</p>
           <ul>
-            <li>По цене</li>
-            <li>По типу</li>
-            <li>По рейтингу</li>
+            <li><a href="">По цене</a></li>
+            <li><a href="">По типу</a></li>
+            <li><a href="">По рейтингу</a></li>
           </ul>
           <ul>
-            <li>По возрастанию</li><!--заменить на стрелки-->
-            <li>По убыванию</li><!--заменить на стрелки-->
+            <li><a href="">По возрастанию</a></li><!--заменить на стрелки-->
+            <li><a href="">По убыванию</a></li><!--заменить на стрелки-->
           </ul>
         </section>
         <section>
