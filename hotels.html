@@ -11,12 +11,14 @@
     <div class="content-area"> <!--Контентная область-->
       <header>
         <nav class="main-navigation">
-          <a href="index.html">
-            <img src="img\logo-sedona.svg" width="138px" height="70px" alt="логотип седона">
-          </a>
           <ul class="site-navigation">
             <li><a href="blank.html">Информация</a></li>
             <li><a href="blank.html">Фото и видео</a></li>
+            <li class="logo">
+              <a>
+                <img src="img\logo-sedona.svg" width="138px" height="70px" alt="логотип седона">
+              </a>
+            </li>
             <li><a href="blank.html">Карта штата</a></li>
             <li><a href="hotels.html">Гостиницы</a></li>
           </ul>
@@ -26,7 +28,7 @@
         <h1 class="visually-hidden">Гостиницы</h1>
         <section>
           <form class="filter" action="https://echo.htmlacademy.ru" method="get">
-            <fieldset>
+            <fieldset class="filter-checkbox-grid">
               <legend>Инфраструктура:</legend>
                 <ul>
                   <li>
@@ -43,7 +45,7 @@
                   </li>
                 </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="filter-checkbox-grid">
               <legend>Тип жилья:</legend>
                 <ul>
                   <li>
@@ -148,12 +150,12 @@
           </ul>
         </section>
       </main>
-      <footer>
+      <footer class="main-footer">
         <div class="phone">
-          <p>#visitSEDONA ТЕЛ: <a href="tel:+79456660166">+7(495) 666-01-66</a></p>
+          <p>#visitSEDONA<br><a href="tel:+79456660166">ТЕЛ: +7(495) 666-01-66</a></p>
         </div>
         <div>
-          <ul>
+          <ul class="social">
             <li><a href="blank.html">twitter</a></li>
             <li><a href="blank.html">facebook</a></li>
             <li><a href="blank.html">youtube</a></li>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="page">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
@@ -7,16 +7,18 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="page-body">
     <div class="content-area"> <!--Контентная область-->
       <header>
         <nav class="main-navigation">
-          <a>
-            <img src="img\logo-sedona.svg" width="138px" height="70px" alt="логотип седона">
-          </a>
           <ul class="site-navigation">
             <li><a href="blank.html">Информация</a></li>
             <li><a href="blank.html">Фото и видео</a></li>
+            <li class="logo">
+              <a>
+                <img src="img\logo-sedona.svg" width="138px" height="70px" alt="логотип седона">
+              </a>
+            </li>
             <li><a href="blank.html">Карта штата</a></li>
             <li><a href="hotels.html">Гостиницы</a></li>
           </ul>
@@ -24,15 +26,15 @@
       </header>
       <main>
         <h1 class="visually-hidden">Город Седона</h1>
-        <section>
+        <section class="welcome">
           <img src="img\intro-welcome.svg" width="456.65px" height="350.88" alt="Приветствие">
         </section>
-        <section>
-          <p class="why-sedona-text">Седона — небольшой городок в Аризоне, заслуживающий большего! </p>
+        <section class="why-sedona">
+          <p class="why-sedona-text">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
           <p class="five-reasons-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </section>
-        <section>
-          <div>
+        <section class="five-reasons">
+          <div class="five-reasons-flex">
             <div class="first-second-reason">
               <h2>Настоящий городок</h2>
               <p>— №1 —</p>
@@ -42,7 +44,7 @@
               <img src="img\photo.jpg" alt="Фото месности">
             </div>
           </div>
-          <div class="other-reasons">
+          <div class="other-reasons five-reasons-flex">
             <div>
               <h2>Жильё</h2>
               <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
@@ -56,7 +58,7 @@
               <p>Не только китайского, но и местного производства!</p>
             </div>
           </div>
-          <div>
+          <div class="five-reasons-flex">
             <div>
               <img src="img\photo2.jpg" alt="Фото моста дьявола">
             </div>
@@ -66,7 +68,7 @@
               <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
           </div>
-          <div class="other-reasons background-gallery">
+          <div class="other-reasons background-gallery five-reasons-flex">
             <div>
               <h2>Небольшая площадь</h2>
               <p>— №3 —</p>
@@ -86,24 +88,30 @@
         </section>
         <section class="hotel-search">
           <p class="interested">Заинтересовались?</p>
-          <p class="hotel-search-text">  Укажите предполагаемые даты поездки,  и мы покажем вам лучшие предложения гостиниц в седоне  </p>
+          <p class="hotel-search-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <button class="button color-pine-cone" type="button" name="button">Поиск гостиницы в Седоне</button>
           <form class="hotel-search-form" action="https://echo.htmlacademy.ru/courses" method="post">
             <p>
               <label for="arrival-date">Дата заезда:</label>
               <input id="arrival-date" type="text" placeholder="24 апреля 2017">
+              <div class="icon-calendar"></div>
             </p>
             <p>
               <label for="departure-date">Дата выезда:</label>
               <input id="departure-date" type="text" placeholder="4 июля 2017">
+              <div class="icon-calendar"></div>
             </p>
             <p>
               <label for="adults-count">Взрослые:</label>
               <input id="adults-count" type="number" min="1" placeholder="2">
+              <div class="icon-minus"></div>
+              <div class="icon-plus"></div>
             </p>
             <p>
               <label for="childs-count">Дети:</label>
               <input id="childs-count" type="number" min="0" placeholder="0">
+              <div class="icon-minus"></div>
+              <div class="icon-plus"></div>
             </p>
             <button class="button color-half-baked" type="submit">Найти</button>
           </form>
@@ -112,12 +120,12 @@
           <img src="img\map.jpg" alt="местонахждение Седоны на карте">
         </div>
       </main>
-      <footer>
+      <footer class="main-footer">
         <div class="phone">
-          <p>#visitSEDONA ТЕЛ: <a href="tel:+79456660166">+7(495) 666-01-66</a></p>
+          <p>#visitSEDONA<br><a href="tel:+79456660166">ТЕЛ: +7(495) 666-01-66</a></p>
         </div>
         <div>
-          <ul>
+          <ul class="social">
             <li><a href="blank.html">twitter</a></li>
             <li><a href="blank.html">facebook</a></li>
             <li><a href="blank.html">youtube</a></li>

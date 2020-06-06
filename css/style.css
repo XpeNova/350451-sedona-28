@@ -45,6 +45,22 @@ img {
 .content-area {
   max-width: 1200px;
   background-color: var(--basic-white);
+
+  margin: 0 auto;
+}
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows:
+    min-content
+    1fr
+    min-content;
+  align-content: start;
 }
 
 /* Main navigation */
@@ -60,6 +76,10 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .site-navigation a {
@@ -75,6 +95,20 @@ img {
   opacity: 0.3;
 }
 
+.logo {
+  width: 138px;
+  height: 70px;
+}
+
+/* Welcome */
+
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 510px;
+}
+
 /* Why Sedona */
 
 .why-sedona-text {
@@ -82,22 +116,48 @@ img {
   line-height: 26px;
   font-weight: bold;
   text-align: center;
+
+  max-width: 470px;
+  margin: 0 auto;
+  padding-top: 100px;
 }
 
 .five-reasons-text {
   line-height: 26px;
   text-align: center;
+
+  max-width: 520px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+/* Five-reasons */
+
+.five-reasons {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: 256px 256px 256px 256px;
+}
+.five-reasons-flex {
+  display: flex;
+  grid-column: 1/5;
 }
 
 .first-second-reason {
   text-align: center;
   color: var(--basic-white);
   background-color: var(--basic-half-baked);
+
+  width: 400px;
 }
 
 .other-reasons {
   text-align: center;
   color: var(--basic-black);
+}
+
+.other-reasons div {
+  width: 400px;
 }
 
 .other-reasons p {
@@ -123,6 +183,9 @@ img {
   text-align: center;
   color: var(--basic-mine-shaft);
 }
+.hotel-search {
+    display: grid;
+}
 
 .hotel-search .button {
   font-family: 'PT Sans', sans-serif;
@@ -132,6 +195,9 @@ img {
   color: var(--basic-white);
   border: none;
   text-transform: uppercase;
+
+  max-width: 568px;
+  margin: 0 auto;
 }
 
 .color-pine-cone {
@@ -184,14 +250,34 @@ img {
 
 /* Footer */
 
+.main-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .phone {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
 }
 
+.phone p {
+  max-width: 250px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
 .phone a {
   color: var(--basic-black);
+}
+
+.social {
+  justify-self: center;
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .website-by {
@@ -206,6 +292,17 @@ img {
   line-height: 21px;
   color: var(--basic-white);
   background-color: var(--basic-grey);
+
+  display: grid;
+  grid-template-columns: 300px 300px 600px;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter-checkbox-grid {
+  grid-row: 1/3;
 }
 
 .filter legend {
@@ -243,10 +340,18 @@ img {
 
 /* Sorting */
 
+.sorting {
+  display: flex;
+  justify-content: start;
+  align-items: baseline;
+}
+
 .sorting ul {
   list-style: none;
   padding: 0;
   margin: 0;
+
+  display: flex;
 }
 
 .sorting-count {
@@ -288,6 +393,13 @@ img {
   list-style: none;
   padding: 0;
   margin: 0;
+
+  display: grid;
+  grid-template-rows: 150px 150px 150px;
+}
+
+.hotels-list li {
+  display: flex;
 }
 
 .hotels-list h2 {
