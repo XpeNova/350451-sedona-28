@@ -11,29 +11,31 @@
     <div class="content-area"> <!--Контентная область-->
       <header>
         <nav class="main-navigation">
+        <div class="logo-container">
+          <a>
+            <img class="logo" src="img\logo-sedona.svg" width="138px" height="70px" alt="логотип седона">
+          </a>
+        </div>
           <ul class="site-navigation">
-            <li><a href="blank.html">Информация</a></li>
-            <li><a href="blank.html">Фото и видео</a></li>
-            <li class="logo">
-              <a>
-                <img src="img\logo-sedona.svg" width="138px" height="70px" alt="логотип седона">
-              </a>
-            </li>
-            <li><a href="blank.html">Карта штата</a></li>
-            <li><a href="hotels.html">Гостиницы</a></li>
+            <li class="information"><a href="blank.html">Информация</a></li>
+            <li class="photo-video"><a href="blank.html">Фото и видео</a></li>
+            <li class="map"><a href="blank.html">Карта штата</a></li>
+            <li class="hotels"><a href="hotels.html">Гостиницы</a></li>
           </ul>
         </nav>
       </header>
       <main>
         <h1 class="visually-hidden">Город Седона</h1>
         <section class="welcome">
+          <h2 class="visually-hidden">Приветствие сайта</h2>
           <img src="img\intro-welcome.svg" width="456.65px" height="350.88" alt="Приветствие">
         </section>
         <section class="why-sedona">
-          <p class="why-sedona-text">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+          <h2 class="why-sedona-text">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
           <p class="five-reasons-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </section>
         <section class="five-reasons">
+          <h2 class="visually-hidden">5 причин почему Сезодна</h2>
           <div class="five-reasons-flex">
             <div class="first-second-reason">
               <h2>Настоящий городок</h2>
@@ -63,7 +65,7 @@
               <img src="img\photo2.jpg" alt="Фото моста дьявола">
             </div>
             <div class="first-second-reason">
-              <h2>Там есть  Мост дьявола</h2>
+              <h2>Там есть Мост дьявола</h2>
               <p>— №2 —</p>
               <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
@@ -87,34 +89,39 @@
           </div>
         </section>
         <section class="hotel-search">
+          <h2 class="visually-hidden">Поиск гостиницы</h2>
           <p class="interested">Заинтересовались?</p>
           <p class="hotel-search-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          <button class="button color-pine-cone" type="button" name="button">Поиск гостиницы в Седоне</button>
-          <form class="hotel-search-form" action="https://echo.htmlacademy.ru/courses" method="post">
-            <p>
-              <label for="arrival-date">Дата заезда:</label>
-              <input id="arrival-date" type="text" placeholder="24 апреля 2017">
-              <div class="icon-calendar"></div>
-            </p>
-            <p>
-              <label for="departure-date">Дата выезда:</label>
-              <input id="departure-date" type="text" placeholder="4 июля 2017">
-              <div class="icon-calendar"></div>
-            </p>
-            <p>
-              <label for="adults-count">Взрослые:</label>
-              <input id="adults-count" type="number" min="1" placeholder="2">
-              <div class="icon-minus"></div>
-              <div class="icon-plus"></div>
-            </p>
-            <p>
-              <label for="childs-count">Дети:</label>
-              <input id="childs-count" type="number" min="0" placeholder="0">
-              <div class="icon-minus"></div>
-              <div class="icon-plus"></div>
-            </p>
-            <button class="button color-half-baked" type="submit">Найти</button>
-          </form>
+          <div class="modal-block">
+            <button class="button color-pine-cone" type="button" name="button">Поиск гостиницы в Седоне</button>
+            <div class="modal">
+              <form class="hotel-search-form" action="https://echo.htmlacademy.ru/courses" method="post">
+              <p>
+                <label for="arrival-date">Дата заезда:</label>
+                <input id="arrival-date" type="text" placeholder="24 апреля 2017">
+                <div class="icon-calendar"></div>
+              </p>
+              <p>
+                <label for="departure-date">Дата выезда:</label>
+                <input id="departure-date" type="text" placeholder="4 июля 2017">
+                <div class="icon-calendar"></div>
+              </p>
+              <p>
+                <label for="adults-count">Взрослые:</label>
+                <input id="adults-count" type="number" min="1" placeholder="2">
+                <div class="icon-minus"></div>
+                <div class="icon-plus"></div>
+              </p>
+              <p>
+                <label for="childs-count">Дети:</label>
+                <input id="childs-count" type="number" min="0" placeholder="0">
+                <div class="icon-minus"></div>
+                <div class="icon-plus"></div>
+              </p>
+              <button class="button color-half-baked" type="submit">Найти</button>
+              </form>
+            </div>
+        </div>
         </section>
         <div>
           <img src="img\map.jpg" alt="местонахждение Седоны на карте">

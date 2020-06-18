@@ -78,10 +78,26 @@ img {
   list-style: none;
 
   display: flex;
+  /* align-items: center; */
   justify-content: space-around;
-  align-items: center;
+
+  height: 55px;
+  position: relative;
+  z-index: 1;
+}
+/*  */
+/*  */
+..site-navigation li {
+  width: 25%;
+  line-height: 56px;
+  vertical-align: middle;
 }
 
+.site-navigation li:nth-child(n + 3){
+  text-align: right;
+}
+/*  */
+/*  */
 .site-navigation a {
   color: var(--basic-black);
 }
@@ -95,6 +111,14 @@ img {
   opacity: 0.3;
 }
 
+.logo-container{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 1200px;
+  z-index: 0;
+}
+
 .logo {
   width: 138px;
   height: 70px;
@@ -106,7 +130,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 510px;
+  min-height: 510px;
 }
 
 /* Why Sedona */
@@ -135,12 +159,16 @@ img {
 
 .five-reasons {
   display: grid;
-  grid-template-columns: 400px 400px 400px;
-  grid-template-rows: 256px 256px 256px 256px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-auto-rows: minmax(256px, auto);
 }
 .five-reasons-flex {
   display: flex;
   grid-column: 1/5;
+}
+
+.five-reasons-flex  img{
+  display: block;
 }
 
 .first-second-reason {
@@ -175,6 +203,9 @@ img {
   line-height: 24px;
   text-align: center;
   font-weight: bold;
+
+  /* margin: 0; */
+  /* margin-top: 30px; */
 }
 
 .hotel-search-text {
@@ -183,6 +214,9 @@ img {
   text-align: center;
   color: var(--basic-mine-shaft);
 }
+
+
+
 .hotel-search {
     display: grid;
 }
