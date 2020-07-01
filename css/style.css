@@ -204,8 +204,8 @@ img {
   text-align: center;
   font-weight: bold;
 
-  /* margin: 0; */
-  /* margin-top: 30px; */
+  margin: 0;
+  margin-top: 30px;
 }
 
 .hotel-search-text {
@@ -215,13 +215,50 @@ img {
   color: var(--basic-mine-shaft);
 }
 
-
+.modal-block {
+  position: relative;
+  width: 568px;
+  margin: 0 auto;
+}
 
 .hotel-search {
-    display: grid;
+  display: grid;
+  background-color: #fff;
+}
+
+.modal {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  padding: 55px;
+}
+
+.modal-row {
+  display: flex;
+  justify-content: space-between;
+  line-height: 38px;
+}
+
+.modal-row input {
+  width: calc(100% - 120px);
+}
+
+.modal-counter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-counter:last-child {
+  margin-left: 80px;
+}
+
+.modal-counter:last-child input {
+  width: calc(100% - 80px);
 }
 
 .hotel-search .button {
+  display: block;
   font-family: 'PT Sans', sans-serif;
   font-size: 21px;
   line-height: 26px;
@@ -230,8 +267,10 @@ img {
   border: none;
   text-transform: uppercase;
 
-  max-width: 568px;
-  margin: 0 auto;
+  height: 86px;
+  width: 100%;
+  margin-top: 55px;
+  outline: none;
 }
 
 .color-pine-cone {
@@ -287,6 +326,7 @@ img {
 .main-footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  height: 120px;
 }
 
 .phone {
@@ -307,15 +347,38 @@ img {
 }
 
 .social {
-  justify-self: center;
-  text-align: center;
-  list-style: none;
-  margin: 0;
+  width: 150px;
+  margin: 0 auto;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+    list-style: none;
 }
 
+.social-block{
+  align-self: center;
+}
+
+.social li {
+}
+.social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+      width: 48px;
+      height: 46px;
+      background-color: #81B3D2;
+}
 .website-by {
   line-height: 26px;
+    display: flex;
+    align-self: center;
+}
+
+.website-by p{
+  margin-right: 8px;
 }
 
 /* hotels.html */
