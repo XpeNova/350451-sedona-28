@@ -78,17 +78,27 @@ img {
   list-style: none;
 
   display: flex;
-  /* align-items: center; */
   justify-content: space-around;
 
   height: 55px;
   position: relative;
   z-index: 1;
 }
-/*  */
-/*  */
-..site-navigation li {
-  width: 25%;
+
+.site-navigation div {
+  display: flex;
+}
+
+.site-navigation div:first-child {
+  text-align: left;
+}
+
+.site-navigation div:last-child {
+  text-align: right;
+}
+
+.site-navigation li {
+  width: 256px;
   line-height: 56px;
   vertical-align: middle;
 }
@@ -130,29 +140,31 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 510px;
+  min-height: 509px;
+  background: url("../img/background-photo.jpg")
 }
 
 /* Why Sedona */
+.why-sedona {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 216px;
+}
 
 .why-sedona-text {
   font-size: 21px;
-  line-height: 26px;
   font-weight: bold;
   text-align: center;
 
   max-width: 470px;
   margin: 0 auto;
-  padding-top: 100px;
 }
 
 .five-reasons-text {
-  line-height: 26px;
   text-align: center;
 
-  max-width: 520px;
   margin: 0 auto;
-  padding-bottom: 50px;
 }
 
 /* Five-reasons */
@@ -177,6 +189,10 @@ img {
   background-color: var(--basic-half-baked);
 
   width: 400px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .other-reasons {
